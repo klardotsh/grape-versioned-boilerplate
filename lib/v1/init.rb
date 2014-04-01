@@ -2,7 +2,7 @@ require_relative 'General'
 
 module API
 	class V1 < Grape::API
-		version [ 'v1' ], using: :path, vendor: 'ivpms', format: :json, cascade: true
+		version [ 'v1' ], using: :path, format: :json, cascade: true
 
 		mount API::V1::General
 
